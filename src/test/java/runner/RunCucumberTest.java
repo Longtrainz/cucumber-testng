@@ -11,10 +11,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		plugin = {
 				"pretty",
-				"io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
+				"io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"},
 		features = "src/test/resources/features",
-		glue = "steps"
-		/*publish = true*/)
+		glue = "steps",
+		publish = true)
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests  {
 

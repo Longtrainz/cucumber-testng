@@ -30,6 +30,7 @@ public class ArticleServiceImpl implements ArticleService {
 
 		try {
 			articles = r.jsonPath().getList("articles.", Article.class);
+			System.out.println(articles.size());
 		} catch (Exception e) {
 			log.error("Articles request exception: "/* + Arrays.toString(e.getStackTrace())*/);
 		}
